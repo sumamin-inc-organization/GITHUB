@@ -7,9 +7,9 @@ GitHubの基本に関するドキュメント
 2. [Git ワークフロー](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC)
 
 3. [git チートシート]()
-     - [履歴の確認](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B1%A5%E6%AD%B4%E3%81%AE%E7%A2%BA%E8%AA%8D)
-     - [ファイル名の整理](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E6%95%B4%E7%90%86)
-
+    - [履歴の確認](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B1%A5%E6%AD%B4%E3%81%AE%E7%A2%BA%E8%AA%8D)
+    - [ファイル名の整理](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E6%95%B4%E7%90%86)
+    - [断片の保存]()  
 
 ---
 
@@ -118,3 +118,10 @@ touch hello_world.txt
 
 - `git rm [file]` => 作業ディレクトリからファイルを削除し、削除をステージします
 - `git mv [file-original] [file-renamed]` => ファイル名を変更し、コミットします
+
+### 断片の保存
+
+- `git stash` => すべての変更のあるトラックされているファイルを一時的に保存します
+- `git stash pop` => 直近に一時保存されたファイルを復旧します
+- `git stash list` => すべての一時保存された変更セットを一覧で表示します
+- `git stash drop` => 直近に一時保存された変更セットを破棄します

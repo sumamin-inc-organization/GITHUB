@@ -12,6 +12,7 @@ GitHubの基本に関するドキュメント
 3. [Git ブランチング](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%83%B3%E3%82%B0)
     - [導入](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B0%8E%E5%85%A5)
     - [ブランチの使用](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E4%BD%BF%E7%94%A8)
+    - [コードの共有]()
 
 4. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
     - [リポジトリの作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)
@@ -149,6 +150,13 @@ touch hello_world.txt
 時には、ファイル内の同じ行が2つの異なるブランチによって変更されている場合があります。このような場合、それらのブランチをマージしようとするとマージの衝突が発生します。ブランチをマージするには、まず衝突を解決する必要があります。
 
 ブランチをもう必要としない場合は、`git branch -d <branch_name>` を使用して、そのブランチが既に main にマージされている場合に削除できます。まだマージされていない場合は、`git branch -D <branch_name>` を使用します。通常、ブランチを使用した後には削除することが望ましいです。そうしないと、ブランチが増えて、必要なときに探しにくくなる場合があります。
+
+### コードの共有
+
+ブランチのもう1つの優れた利用方法は、他の人とコードを共有することです。これは、メインブランチ（またはフィーチャーブランチ）にコミットしたくないコードでも使えます。
+
+例えば、新しい機能で作業中に見つけられないバグがあって、コードが壊れる原因になってしまった場合、その壊れたコードをコミットしてプロジェクトの「永久記録」に残したくないでしょう。その代わりに、新しい一時的なブランチを作成し、それに切り替えてコードをコミットすることができます。その後、この新しい一時的なブランチをGitHubにプッシュすると、他の人と共有して問題を解決するのに役立つかもしれません。
+
 
 
 ---

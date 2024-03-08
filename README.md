@@ -13,6 +13,7 @@ GitHubの基本に関するドキュメント
     - [導入](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B0%8E%E5%85%A5)
     - [ブランチの使用](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E4%BD%BF%E7%94%A8)
     - [コードの共有](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E5%85%B1%E6%9C%89)
+    - [新しいブランチの設定]()
 
 4. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
     - [リポジトリの作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)
@@ -158,6 +159,35 @@ touch hello_world.txt
 例えば、新しい機能で作業中に見つけられないバグがあって、コードが壊れる原因になってしまった場合、その壊れたコードをコミットしてプロジェクトの「永久記録」に残したくないでしょう。その代わりに、新しい一時的なブランチを作成し、それに切り替えてコードをコミットすることができます。その後、この新しい一時的なブランチをGitHubにプッシュすると、他の人と共有して問題を解決するのに役立つかもしれません。
 
 
+### 新しいブランチの設定
+
+
+- **新しいブランチを作成して切り替える:**
+    ```
+    git checkout -b <new_branch_name>
+    ```
+
+- **新しいブランチをリモートリポジトリにプッシュする:**
+    ```
+    git push origin <new_branch_name>
+    ```
+
+- **リモートリポジトリで新しいブランチの作成を確認する:**
+
+    リモートリポジトリ（たとえばGitHubなど）を確認して、新しいブランチが正常に作成されていることを確認します。
+
+- **ローカルで新しいブランチに切り替えることを確認する:**
+    ```
+    git branch
+    ```
+    このコマンドは、ブランチのリストを表示します。現在のブランチにはアスタリスク(*)が付いています。新しいブランチが選択されていることを確認してください。
+
+- **新しい機能の作業を開始する:**
+
+    これで、ファイルを追加したり、変更を加えたり、コミットしたり、新しいブランチに変更をプッシュするときには、メインブランチと同様に作業できます。変更を新しいブランチにプッシュする場合は、次のコマンドを使用してください：
+    ```
+    git push origin <new_branch_name>
+    ```
 
 ---
 

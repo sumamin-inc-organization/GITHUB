@@ -14,6 +14,7 @@ GitHubの基本に関するドキュメント
     - [ブランチの使用](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E4%BD%BF%E7%94%A8)
     - [コードの共有](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E5%85%B1%E6%9C%89)
     - [新しいブランチの設定](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E6%96%B0%E3%81%97%E3%81%84%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E8%A8%AD%E5%AE%9A)
+    - [変更のマージ]()
 
 4. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
     - [リポジトリの作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)
@@ -188,6 +189,45 @@ touch hello_world.txt
     ```
     git push origin <new_branch_name>
     ```
+
+
+### 変更のマージ
+
+1. **マージ先のブランチに切り替える（例: `main`）:**
+   ```
+   git checkout main
+   ```
+
+2. **フィーチャーブランチ（`<feature-branch>`）をメインブランチにマージする:**
+   ```
+   git merge <feature-branch>
+   ```
+
+3. **マージの成功を確認する:**
+   ```
+   git log
+   ```
+   フィーチャーブランチからのすべてのコミットがメインブランチに組み込まれていることを確認します。
+
+4. **メインブランチをリモートリポジトリにプッシュする:**
+   ```
+   git push origin main
+   ```
+
+5. **リモートリポジトリでの変更を確認する:**
+   リモートホスティングサービス（例: GitHub）でリポジトリを確認し、メインブランチが今後、フィーチャーブランチからの変更とコミットを反映していることを確認します。
+
+6. **不要なブランチを片付ける（オプション）:**
+   - ローカルでブランチを削除する：
+     ```
+     git branch -d <feature-branch>
+     ```
+   - リモートリポジトリからブランチを削除する：
+     ```
+     git push origin --delete <feature-branch>
+     ```
+
+フィーチャーブランチをメインブランチに正常にマージし、不要なブランチをきれいに片付けました。
 
 ---
 

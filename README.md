@@ -7,8 +7,8 @@ GitHubの基本に関するドキュメント
 2. [Git ワークフロー](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC)
 
 3. [git チートシート]()
-     - [検査＆比較](https://github.com/sumamin-inc-organization/a-sun?tab=readme-ov-file#clamp)
-     - [ファイル名の整理]()
+     - [履歴の確認](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B1%A5%E6%AD%B4%E3%81%AE%E7%A2%BA%E8%AA%8D)
+     - [ファイル名の整理](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E6%95%B4%E7%90%86)
 
 
 ---
@@ -110,11 +110,11 @@ touch hello_world.txt
 
 ### 履歴の確認
 
-`git log`  => 現在アクティブなブランチのコミット履歴を表示します。
+- `git log`  => 現在アクティブなブランチのコミット履歴を表示します。
 
-`git log --follow [file]` => ファイルを変更したコミットを表示し、リネームを超えても表示します
+- `git log --follow [file]` => ファイルを変更したコミットを表示し、リネームを超えても表示します
 
 ### ファイル名の整理 
 
-`git rm [file]` => 作業ディレクトリからファイルを削除し、削除をステージします
-`git mv [file-original] [file-renamed]` => ファイル名を変更し、コミットします
+- `git rm [file]` => 作業ディレクトリからファイルを削除し、削除をステージします
+- `git mv [file-original] [file-renamed]` => ファイル名を変更し、コミットします

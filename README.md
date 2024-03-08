@@ -13,7 +13,7 @@ GitHubの基本に関するドキュメント
     - [コミットの修正](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%AE%E4%BF%AE%E6%AD%A3)
     -[変更の整理](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%A4%89%E6%9B%B4%E3%81%AE%E6%95%B4%E7%90%86)
 
-    
+
 ---
 
 ## 新しいリポジトリを作成する方法

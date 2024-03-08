@@ -84,3 +84,9 @@ touch hello_world.txt
 
 ![git add](./images/workflow-images/gitadd.png)
 
+4. `git commit -m "Add hello_world.txt"` を入力し、次にもう一度 `git status` を入力します。出力には、「nothing to commit, working tree clean」と表示されるはずです。これは、変更がコミットされたことを示しています。もし "upstream is gone" というメッセージが表示された場合、心配する必要はありません。これは、クローンしたリポジトリに現在ブランチがない場合にのみ表示され、このプロジェクトの残りの手順に従うと解決されます。
+
+<em>メッセージ「Your branch is ahead of ‘origin/main’ by 1 commit」は、今、リモートリポジトリよりも新しいスナップショットを持っていることを意味します。この後の手順で、これらのスナップショットをアップロードします。</em>
+
+
+![git status](./images/workflow-images/status.png)

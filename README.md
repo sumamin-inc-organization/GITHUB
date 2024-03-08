@@ -10,7 +10,8 @@ GitHubの基本に関するドキュメント
 2. [Git ワークフロー](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC)
 
 3. [Git ブランチング](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%83%B3%E3%82%B0)
-    - [導入](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B0%8E%E5%85%A5) 
+    - [導入](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B0%8E%E5%85%A5)
+    - [ブランチの使用]()
 
 4. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
     - [リポジトリの作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)
@@ -130,10 +131,24 @@ touch hello_world.txt
 - 特定のブランチでコミットを行うと、それらの変更はそのブランチにのみ存在し、他のすべてのブランチは、分岐した時点とまったく同じ状態のままになります。
 - これは、メインブランチを、正常に動作していることがわかっている完成した機能のみを保持する場所として使用し、専用のブランチであるフィーチャーブランチを使用して、プロジェクトに機能を追加できることを意味します。
 
+### ブランチの使用
+
+ブランチを作成するには、`git branch <branch_name>` コマンドを使用します。その後、`git checkout <branch_name>` を使用して新しいブランチに切り替えることができます。また、`git checkout -b <branch_name>` の形式で、checkoutに-bフラグを使用して新しいブランチを作成してそれに切り替えることもできます。
+
+現在のブランチを確認するには、他の引数を指定せずに`git branch`を使用します。現在いるブランチは、アスタリスクで示されます。他のどのブランチからも main に戻りたい場合は、`git checkout main` を使用して他のブランチに切り替えるのと同様に行います。
+
+フィーチャーブランチでの作業が完了し、そのブランチで行ったコミットを main ブランチに取り込む準備が整ったら、マージと呼ばれる手順を実行する必要があります。
+
+マージは、`git merge <branch_name>` コマンドを使用して行います。これにより、branch_name で行った変更がコミットされ、現在いるブランチに追加されます。以下の図に、develop ブランチが作成され、コミットされ、その後 main にマージされる例が示されています。
 
 
 
+![git branching](./images/git-branching/gitbranching.png)
 
+
+時には、ファイル内の同じ行が2つの異なるブランチによって変更されている場合があります。このような場合、それらのブランチをマージしようとするとマージの衝突が発生します。ブランチをマージするには、まず衝突を解決する必要があります。
+
+ブランチをもう必要としない場合は、`git branch -d <branch_name>` を使用して、そのブランチが既に main にマージされている場合に削除できます。まだマージされていない場合は、`git branch -D <branch_name>` を使用します。通常、ブランチを使用した後には削除することが望ましいです。そうしないと、ブランチが増えて、必要なときに探しにくくなる場合があります。
 ---
 
 ## git チートシート

@@ -2,7 +2,7 @@
 GitHubの基本に関するドキュメント
 #　流れ
 
-1.[新しいリポジトリを作成する方法]() 
+1.[新しいリポジトリを作成する方法](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E6%96%B0%E3%81%97%E3%81%84%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95) 
 
 
 ## 新しいリポジトリを作成する方法

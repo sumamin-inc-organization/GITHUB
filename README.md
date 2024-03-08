@@ -11,7 +11,7 @@ GitHubの基本に関するドキュメント
 
 3. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
     - [リポジトリの作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)
-    - [変更の作成]()
+    - [変更の作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%A4%89%E6%9B%B4%E3%81%AE%E4%BD%9C%E6%88%90)
     - [履歴の確認](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B1%A5%E6%AD%B4%E3%81%AE%E7%A2%BA%E8%AA%8D)
     - [ファイル名の整理](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E6%95%B4%E7%90%86)
     - [断片の保存](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E6%96%AD%E7%89%87%E3%81%AE%E4%BF%9D%E5%AD%98)  

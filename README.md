@@ -90,3 +90,10 @@ touch hello_world.txt
 
 
 ![git status](./images/workflow-images/status.png)
+
+
+5. `git log` を入力し、出力を確認します。"Add hello_world.txt" コミットのエントリーが表示されるはずです。コミットを行った著者や、コミットが行われた日時の詳細も表示されます。もしターミナルが "(END)" と表示された状態で止まっている場合は、単に "q" を押して終了します。これに関する設定は後で行うことができますが、現時点ではあまり心配する必要はありません。
+
+
+![git status](./images/workflow-images/log.png) 
+

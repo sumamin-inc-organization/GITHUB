@@ -9,7 +9,10 @@ GitHubの基本に関するドキュメント
 
 2. [Git ワークフロー](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC)
 
-3. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
+3. [Git ブランチング]()
+    - [導入]()
+
+4. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
     - [リポジトリの作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)
     - [変更の作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%A4%89%E6%9B%B4%E3%81%AE%E4%BD%9C%E6%88%90)
     - [履歴の確認](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B1%A5%E6%AD%B4%E3%81%AE%E7%A2%BA%E8%AA%8D)
@@ -110,6 +113,26 @@ touch hello_world.txt
 
 
 ![git log](./images/workflow-images/log.png) 
+
+
+---
+
+## Git ブランチング
+
+---
+
+### 導入
+
+- Gitのブランチングという概念を学ぶべきです。これにより、現在の状態を壊すことなく変更を行うことができます。
+- Gitのブランチは、リポジトリが同時に複数の代替現実バージョンのファイルを保持できるようにします。
+- デフォルトブランチとは、プロジェクトで最初のコミットを行ったときに作成されるブランチのことであり、そのコマンドでは現在の標準として名前を main に設定しています。
+- プロジェクトのすべてのブランチは、木の枝（その名前が由来する）のように、"幹"（メインブランチ）または他のブランチから分岐します。
+- 特定のブランチでコミットを行うと、それらの変更はそのブランチにのみ存在し、他のすべてのブランチは、分岐した時点とまったく同じ状態のままになります。
+- これは、メインブランチを、正常に動作していることがわかっている完成した機能のみを保持する場所として使用し、専用のブランチであるフィーチャーブランチを使用して、プロジェクトに機能を追加できることを意味します。
+
+
+
+
 
 ---
 

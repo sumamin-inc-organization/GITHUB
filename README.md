@@ -4,7 +4,7 @@ GitHubの基本に関するドキュメント
 
 1. [新しいリポジトリを作成する方法](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E6%96%B0%E3%81%97%E3%81%84%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95) 
 
-2. [Git ワークフロー]()
+2. [Git ワークフロー](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC)
 
 ---
 
@@ -67,15 +67,20 @@ https://github.com/USER-NAME/REPOSITORY-NAME.git
 touch hello_world.txt
 ```
 
+
 ![create](./images/workflow-images/createHelloWorld.png)
 
 
+
+
 2. ターミナルで `git status` を入力します。出力で、`hello_world.txt` ファイルが赤で表示されていることに注意してください。これは、このファイルがステージされていないことを意味します。
+
 
 ![git status](./images/workflow-images/createHelloWorld.png)
 
 
 3. `git add hello_world.txt` を入力します。このコマンドは、`hello_world.txt` ファイルを Git のステージングエリアに追加します。ステージングエリアは、Git でコミットを行うための二段階プロセスの一部です。ステージングエリアを変更の「待合室」と考えてください。これで、再度 `git status` を入力します。出力で、ファイルが今や緑色で表示されていることに注意してください。これは、ファイルが現在ステージングエリアにあることを意味します。
+
 
 ![git add](./images/workflow-images/gitadd.png)
 

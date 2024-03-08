@@ -11,6 +11,7 @@ GitHubの基本に関するドキュメント
 
 3. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
     - [リポジトリの作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)
+    - [変更の作成]()
     - [履歴の確認](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B1%A5%E6%AD%B4%E3%81%AE%E7%A2%BA%E8%AA%8D)
     - [ファイル名の整理](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E6%95%B4%E7%90%86)
     - [断片の保存](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E6%96%AD%E7%89%87%E3%81%AE%E4%BF%9D%E5%AD%98)  
@@ -120,6 +121,15 @@ touch hello_world.txt
 
 - `git init [project-name]` => 指定した名前のローカルリポジトリを作成します
 - `git clone [url]` => プロジェクトとすべてのバージョン履歴をダウンロードします
+
+### 変更の作成
+
+- `git status` => コミット可能なすべての新規または変更のあるファイルを一覧で表示します
+- `git diff` => まだステージされていないファイルの差分を表示します
+- `git add [file]` => バージョン管理のためにファイルのスナップショットを作成します
+- `git diff --staged` => ステージングと最後のファイルバージョンとの差分を表示します
+- `git reset [file]` => ファイルをステージングから外しますが、その内容は保持します
+- `git commit -m "[descriptive message]"` => ファイルのスナップショットをバージョン履歴内に恒久的に記録します
 
 ### 履歴の確認
 

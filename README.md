@@ -6,6 +6,11 @@ GitHubの基本に関するドキュメント
 
 2. [Git ワークフロー](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC)
 
+3. [git チートシート]()
+     - [検査＆比較](https://github.com/sumamin-inc-organization/a-sun?tab=readme-ov-file#clamp)
+     - [ファイル名の整理]()
+
+
 ---
 
 ## 新しいリポジトリを作成する方法
@@ -95,5 +100,21 @@ touch hello_world.txt
 5. `git log` を入力し、出力を確認します。"Add hello_world.txt" コミットのエントリーが表示されるはずです。コミットを行った著者や、コミットが行われた日時の詳細も表示されます。もしターミナルが "(END)" と表示された状態で止まっている場合は、単に "q" を押して終了します。これに関する設定は後で行うことができますが、現時点ではあまり心配する必要はありません。
 
 
-![git status](./images/workflow-images/log.png) 
+![git log](./images/workflow-images/log.png) 
 
+---
+
+## git チートシート
+
+---
+
+### 履歴の確認
+
+`git log`  => 現在アクティブなブランチのコミット履歴を表示します。
+
+`git log --follow [file]` => ファイルを変更したコミットを表示し、リネームを超えても表示します
+
+### ファイル名の整理 
+
+`git rm [file]` => 作業ディレクトリからファイルを削除し、削除をステージします
+`git mv [file-original] [file-renamed]` => ファイル名を変更し、コミットします

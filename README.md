@@ -11,7 +11,7 @@ GitHubの基本に関するドキュメント
 
 3. [Git ブランチング](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%83%B3%E3%82%B0)
     - [導入](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B0%8E%E5%85%A5)
-    - [ブランチの使用]()
+    - [ブランチの使用](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E4%BD%BF%E7%94%A8)
 
 4. [git チートシート](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#git-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88)
     - [リポジトリの作成](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)

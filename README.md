@@ -9,7 +9,8 @@ GitHubの基本に関するドキュメント
 3. [git チートシート]()
     - [履歴の確認](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E5%B1%A5%E6%AD%B4%E3%81%AE%E7%A2%BA%E8%AA%8D)
     - [ファイル名の整理](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E6%95%B4%E7%90%86)
-    - [断片の保存]()  
+    - [断片の保存](https://github.com/sumamin-inc-organization/GITHUB?tab=readme-ov-file#%E6%96%AD%E7%89%87%E3%81%AE%E4%BF%9D%E5%AD%98)  
+    - []
 
 ---
 
@@ -125,3 +126,8 @@ touch hello_world.txt
 - `git stash pop` => 直近に一時保存されたファイルを復旧します
 - `git stash list` => すべての一時保存された変更セットを一覧で表示します
 - `git stash drop` => 直近に一時保存された変更セットを破棄します
+
+### コミットの修正
+
+- `git reset [commit]` => `commit` 以降すべてのコミットを取り消し、ローカルでは変更を保持します
+- `git reset --hard [commit]` => 指定されたコミットに戻り、それ以降のすべての変更を破棄します

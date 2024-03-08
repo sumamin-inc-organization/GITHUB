@@ -131,3 +131,12 @@ touch hello_world.txt
 
 - `git reset [commit]` => `commit` 以降すべてのコミットを取り消し、ローカルでは変更を保持します
 - `git reset --hard [commit]` => 指定されたコミットに戻り、それ以降のすべての変更を破棄します
+
+### 変更の整理
+
+- `git branch` => 現在のリポジトリ上のすべてのローカルブランチを一覧で表示します
+- `git branch [branch-name]` => 新規ブランチを作成します
+- `git checkout [branch-name]` => 指定されたブランチに切り替え、作業ディレクトリを更新します
+- `git checkout -b [branch-name]` => [branch name] ブランチを作成し、そのブランチに移動します
+- `git branch --show-current` =>  現在のブランチを表示
+- `git branch --show` => 現在のブランチを表示します（Git 2.22以上で利用可能）
